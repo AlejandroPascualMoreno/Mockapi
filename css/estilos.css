@@ -1,0 +1,111 @@
+.hidden {
+    display: none !important;
+  }
+
+body{
+  background-image: url("/images/bgada.png");
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.nombre{
+  text-align: center;
+}
+
+.ingrediente{
+  text-align: center;
+}
+
+
+.foto-plato{
+   width: 50%;
+   margin: auto;
+   text-align: center;
+   display: flex;
+   border-radius: 10% ;
+   box-shadow: 0px 0px 10px 2px rgb(0 0 0 / 0.8);
+  }
+
+#mostrar{
+    border-radius: 10px;
+    border-color: rgb(255, 0, 0);
+    background-color: rgb(250, 120, 120);
+    margin-top: 5px;
+    padding: 5px;
+    margin-bottom: 5px;
+  }
+
+#favoritos{
+    border-radius: 10px;
+    border-color: rgb(255, 0, 0);
+    background-color: rgb(250, 120, 120);
+    margin-top: 5px;
+    padding: 5px;
+    margin-bottom: 5px;
+  }
+
+#favBoton{
+    border-radius: 10px;
+    border-color: rgb(255, 0, 0);
+    background-color: rgb(250, 120, 120);
+    margin-top: 5px;
+    padding: 5px;
+    margin-bottom: 5px;
+  }
+  #ordPrecio{
+    border-radius: 10px;
+    border-color: rgb(255, 0, 0);
+    background-color: rgb(250, 120, 120);
+    margin-top: 5px;
+    padding: 5px;
+    margin-bottom: 5px;
+  }
+
+@media (max-width: 600px) {
+  .foto-plato{
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  }
+  #mostrar{
+    border-radius: 10px;
+    border-color: rgb(255, 0, 0);
+    background-color: rgb(250, 120, 120);
+    margin-top: 5px;
+    padding: 5px;
+    margin-bottom: 15px;
+  }
+  #favoritos{
+    border-radius: 10px;
+    border-color: rgb(255, 0, 0);
+    background-color: rgb(250, 120, 120);
+    margin-top: 5px;
+    padding: 5px;
+    margin-bottom: 15px;
+  }
+  #favBoton{
+    border-radius: 10px;
+    border-color: rgb(255, 0, 0);
+    background-color: rgb(250, 120, 120);
+    margin-top: 5px;
+    padding: 5px;
+    margin-bottom: 5px;
+    display: inline-block;
+    
+  }
+  #ordPrecio{
+    border-radius: 10px;
+    border-color: rgb(255, 0, 0);
+    background-color: rgb(250, 120, 120);
+    margin-top: 5px;
+    padding: 5px;
+    margin-bottom: 10px;
+    display: inline-block;
+  }
+  h1{
+    text-align: center;
+  }
+  
+}
+
