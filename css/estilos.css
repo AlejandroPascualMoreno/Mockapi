@@ -68,15 +68,15 @@ body{
      background: yellow;
     }
 
-    .mortimer li {
+    .mortimer .chope {
       cursor: pointer;
     }
-    .mortimer li:hover:after,
-    .mortimer li.fav:after {
+    .mortimer .chope:hover:after,
+    .mortimer .fav:after {
       content: ' \2605';
       color: rgb(255, 203, 0);
     }
-    .mortimer li.fav:hover:after {
+    .mortimer .fav:hover:after {
       content: ' \2606';
     }
 

@@ -8,7 +8,7 @@ fetch(api_url)
   const mostrarData = (data) => {
     let body = ''
     for(let i = 0; i<data.length; i++){
-      body += `<li id="${[data[i].nombre]}">Chupa</li><div class="platoGeneral"><div class="platoTexto"><h3>${data[i].nombre}</h3><p>${data[i].ingredientes}</p><p>${data[i].precio}</p></div><div class="platoImagen"><img src=${data[i].imagen}></img></div></div>`
+      body += `<button class="chope" id="${[data[i].nombre]}">Favorito: </button><div class="platoGeneral"><div class="platoTexto"><h3>${data[i].nombre}</h3><p>${data[i].ingredientes}</p><p>${data[i].precio}</p></div><div class="platoImagen"><img src=${data[i].imagen}></img></div></div>`
     }
     document.getElementById('platitos').innerHTML = body;
 
