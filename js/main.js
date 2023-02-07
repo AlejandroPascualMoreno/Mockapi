@@ -8,13 +8,39 @@ fetch(api_url)
   const mostrarData = (data) => {
     let body = ''
     for(let i = 0; i<data.length; i++){
-      body += `<div class="platoGeneral" id=${[i]}><div class="platoTexto"><h3>${data[i].nombre}</h3><p>${data[i].ingredientes}</p><p>${data[i].precio}</p><button id="favBoton">Añadir a favoritos</button></div><div class="platoImagen"><img src=${data[i].imagen}></img></div></div>`
+      body += `<li id="${[data[i].nombre]}">Chupa</li><div class="platoGeneral"><div class="platoTexto"><h3>${data[i].nombre}</h3><p>${data[i].ingredientes}</p><p>${data[i].precio}</p></div><div class="platoImagen"><img src=${data[i].imagen}></img></div></div>`
     }
     document.getElementById('platitos').innerHTML = body;
 
   }
 
+  // get favorites from local storage or empty array
+  var favorites = JSON.parse(localStorage.getItem('favorites')) || [];
+  // add class 'fav' to each favorite
+  favorites.forEach(function(favorite) {
+    document.getElementById(favorite).className = 'fav';
+  });
+  // register click event listener
+  document.querySelector('.mortimer').addEventListener('click', function(e) {
+    var id = e.target.id,
+        item = e.target,
+        index = favorites.indexOf(id);
+    // return if target doesn't have an id (shouldn't happen)
+    if (!id) return;
+    // item is not favorite
+    if (index == -1) {
+      favorites.push(id);
+      item.className = 'fav';
+    // item is already favorite
+    } else {
+      favorites.splice(index, 1);
+      item.className = '';
+    }
+    // store array in local storage
+    localStorage.setItem('favorites', JSON.stringify(favorites));
+  });
 
+// local storage stores strings so we use JSON to stringify for storage and parse to get out of storage
 
   // var bbdd = window.localStorage;
   // var favoritos = [];
