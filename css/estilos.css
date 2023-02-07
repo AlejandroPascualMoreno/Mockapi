@@ -26,14 +26,6 @@ body{
    box-shadow: 0px 0px 10px 2px rgb(0 0 0 / 0.8);
   }
 
-#mostrar{
-    border-radius: 10px;
-    border-color: rgb(255, 0, 0);
-    background-color: rgb(250, 120, 120);
-    margin-top: 5px;
-    padding: 5px;
-    margin-bottom: 5px;
-  }
 
 #favoritos{
     border-radius: 10px;
@@ -61,21 +53,25 @@ body{
     margin-bottom: 5px;
   }
 
+  .platoGeneral {
+     display: flex;
+     flex-direction: row;
+     align-items: stretch;
+     margin-bottom: 10px;
+    }
+  .platoTexto {
+     width: 66.6%;
+     background: green;
+    }
+  .platoImagen {
+     width: 33.4%;
+     background: yellow;
+    }
+
+
 @media (max-width: 600px) {
-  .foto-plato{
-  width: 90%;
-  margin: auto;
-  text-align: center;
-  display: flex;
-  }
-  #mostrar{
-    border-radius: 10px;
-    border-color: rgb(255, 0, 0);
-    background-color: rgb(250, 120, 120);
-    margin-top: 5px;
-    padding: 5px;
-    margin-bottom: 15px;
-  }
+ 
+
   #favoritos{
     border-radius: 10px;
     border-color: rgb(255, 0, 0);
@@ -108,4 +104,5 @@ body{
   }
   
 }
+
 
