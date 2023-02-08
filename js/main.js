@@ -40,6 +40,14 @@ fetch(api_url)
     localStorage.setItem('favorites', JSON.stringify(favorites));
   });
 
+  // document.querySelector('#favoritos').addEventListener('click', function(e) {
+  //   const mydivclass = document.querySelector('.mortimer');
+  //   // if 'hasClass' is exist on 'mydivclass'
+  //   if(mydivclass.classList.contains('chope')) {
+  //       // do something if 'hasClass' is exist.
+  //   }
+  // });
+
 // local storage stores strings so we use JSON to stringify for storage and parse to get out of storage
 
   // var bbdd = window.localStorage;
